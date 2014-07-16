@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"    
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"     
+      xmlns:jsf="http://xmlns.jcp.org/jsf"    
+      xmlns:passthrough="http://xmlns.jcp.org/jsf/passthrough"     
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+
+    <h:body>
+        <f:view contracts="default" transient="false">
+            <ui:composition template="/template.xhtml">               
+                <ui:define name="content">
+                    <div class="container">
+
+                        <div class="row">
+
+                            <div class="col-lg-12">
+                                <h1 class="page-header">About <small>It's Nice to Meet You!</small></h1>
+                                <ol class="breadcrumb">
+                                   <li><a href="#{request.contextPath}/index.jsf">Home page</a></li>
+                                    <li class="active">About</li>
+                                </ol>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/deal.jpg"/>
+                                <div class="fb-like" data-href="#{request.contextPath}/modnet/general/about.jsf" data-width="The pixel width of the plugin"
+                                     data-height="The pixel height of the plugin" data-colorscheme="light" 
+                                     data-layout="standard" data-action="like"
+                                     data-show-faces="true" data-send="false"></div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Welcome to 'Modern Business'</h2>
+                                <p>This is a great place to introduce your company or project and describe what you do. This about page features general company information, employee bios, and other helpful elements.</p>
+                                <p>Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                            </div>
+
+                        </div>
+                        <!-- Team Member Profiles -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="page-header">Our Team</h2>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/w/w5.jpg"/>
+                                    <h3>John Smith <small>Job Title</small></h3>
+                                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                                    <ul class="list-unstyled list-inline list-social-icons">
+                                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+                               </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/w/w10.jpg"/>
+                                    <h3>John Smith <small>Job Title</small></h3>
+                                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                                    <ul class="list-unstyled list-inline list-social-icons">
+                                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/w/w1.jpg"/>
+                                    <h3>John Smith <small>Job Title</small></h3>
+                                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                                    <ul class="list-unstyled list-inline list-social-icons">
+                                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+                                    </ul>
+                            </div>                           
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="page-header">Our Team</h2>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/w/w8.jpg"/>
+                                    <h3>John Smith <small>Job Title</small></h3>
+                                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                                    <ul class="list-unstyled list-inline list-social-icons">
+                                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+                               </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/w/w3.jpg"/>
+                                    <h3>John Smith <small>Job Title</small></h3>
+                                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                                    <ul class="list-unstyled list-inline list-social-icons">
+                                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+                                    </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive" src="#{request.contextPath}/resources/images/w/w7.jpg"/>
+                                    <h3>John Smith <small>Job Title</small></h3>
+                                    <p>What does this team member do? Keep it short! This is also a great spot for social links!</p>
+                                    <ul class="list-unstyled list-inline list-social-icons">
+                                        <li class="tooltip-social facebook-link"><a href="#facebook-profile" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social linkedin-link"><a href="#linkedin-profile" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social twitter-link"><a href="#twitter-profile" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+                                        <li class="tooltip-social google-plus-link"><a href="#google-plus-profile" data-toggle="tooltip" data-placement="top" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+                                    </ul>
+                            </div>                           
+                        </div>
+                        <!-- Our Customers -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="page-header">Our Customers</h2>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img class="img-responsive img-customer" src="http://placehold.it/500x300"/>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img class="img-responsive img-customer" src="http://placehold.it/500x300"/>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img class="img-responsive img-customer" src="http://placehold.it/500x300"/>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img class="img-responsive img-customer" src="http://placehold.it/500x300"/>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img class="img-responsive img-customer" src="http://placehold.it/500x300"/>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-xs-6">
+                                <img class="img-responsive img-customer" src="http://placehold.it/500x300"/>
+                            </div>
+                        </div>
+                    </div><!-- /.container -->                    
+                </ui:define>
+                  <ui:define name="footer">
+                  
+                </ui:define>
+            </ui:composition>
+        </f:view>
+    </h:body>
+</html>
+

@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"    
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"     
+      xmlns:jsf="http://xmlns.jcp.org/jsf"    
+      xmlns:passthrough="http://xmlns.jcp.org/jsf/passthrough"     
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+
+    <h:body>
+        <f:view contracts="default" transient="false">
+            <ui:composition template="/template.xhtml">               
+                <ui:define name="content">
+                    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h1 class="page-header">Pricing Table
+                    <small>Our Pricing Options</small>
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li class="active">Pricing Table</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Basic</strong>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="panel-title price">$9
+                            <span class="price-cents">99</span>
+                            <span class="price-month">mo.</span>
+                        </h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">5 Projects</li>
+                        <li class="list-group-item">5 GB of Storage</li>
+                        <li class="list-group-item">Up to 100 Users</li>
+                        <li class="list-group-item">10 GB Bandwidth</li>
+                        <li class="list-group-item">Security Suite</li>
+                        <li class="list-group-item"><a class="btn btn-primary">Sign Up Now!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Plus</strong>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="panel-title price">$19
+                            <span class="price-cents">99</span>
+                            <span class="price-month">mo.</span>
+                        </h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">10 Projects</li>
+                        <li class="list-group-item">10 GB of Storage</li>
+                        <li class="list-group-item">Up to 250 Users</li>
+                        <li class="list-group-item">25 GB Bandwidth</li>
+                        <li class="list-group-item">Security Suite</li>
+                        <li class="list-group-item"><a class="btn btn-primary">Sign Up Now!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Premium <span class="label label-success">Best Value!</span></strong>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="panel-title price">$29
+                            <span class="price-cents">99</span>
+                            <span class="price-month">mo.</span>
+                        </h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Unlimited</li>
+                        <li class="list-group-item">50 GB of Storage</li>
+                        <li class="list-group-item">Up to 1000 Users</li>
+                        <li class="list-group-item">100 GB Bandwidth</li>
+                        <li class="list-group-item">Security Suite</li>
+                        <li class="list-group-item"><a class="btn btn-primary">Sign Up Now!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <strong>Ultimate</strong>
+                    </div>
+                    <div class="panel-body">
+                        <h3 class="panel-title price">$49
+                            <span class="price-cents">99</span>
+                            <span class="price-month">mo.</span>
+                        </h3>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Unlimited</li>
+                        <li class="list-group-item">150 GB of Storage</li>
+                        <li class="list-group-item">Unlimited</li>
+                        <li class="list-group-item">500 GB Bandwidth</li>
+                        <li class="list-group-item">Security Suite</li>
+                        <li class="list-group-item"><a class="btn btn-primary">Sign Up Now!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+                </ui:define>
+                  <ui:define name="footer">
+                  
+                </ui:define>
+            </ui:composition>
+        </f:view>
+    </h:body>
+</html>
+

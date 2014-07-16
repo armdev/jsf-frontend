@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">   
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">     
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- You'll want to use a responsive image option so this logo looks good on devices - I recommend using something like retina.js (do a quick Google search for it and you'll find it) -->
+                <a class="navbar-brand" href="#{request.contextPath}/index.jsf">Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#{request.contextPath}/pages/general/about.jsf">About us</a></li>
+                    <li><a href="#{request.contextPath}/pages/general/services.jsf">Services</a></li>
+                    <li><a href="#{request.contextPath}/pages/general/contact.jsf">Contact</a></li>              
+                    <li><a href="#{request.contextPath}/pages/general/price.jsf">Pricing</a></li>                  
+                    <h:panelGroup  rendered="#{sessionController.userContext != null}">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">#{i18n.settings}<b class="caret"></b></a>
+                            <ul class="dropdown-menu">                            
+
+                                <h:form rendered="#{sessionController.userContext != null}"> 
+                                    <li>
+                                        <center>
+                                            <h:commandLink value="#{i18n.logout}" action="#{userLogout.doLogout}"
+                                                           immediate="true" rendered="#{sessionController.userContext != null}"/>
+                                        </center>
+                                    </li>                
+                                </h:form>
+                            </ul>
+                        </li>    
+                    </h:panelGroup>                   
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">User pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">                           
+                            <li><a href="#{request.contextPath}/pages/user/inbox.jsf">Inbox</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/alerts.jsf">Alerts</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/dashboard.jsf">Dashboard</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/quote.jsf">Quote</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/subscribe.jsf">Subscribe</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/payment.jsf">Payment</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/tags.jsf">Tags</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/userprofile.jsf">User profile</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/blogpost.jsf">Blog post</a></li>
+                             <li><a href="#{request.contextPath}/pages/user/bloghome.jsf">Blog home</a></li>
+                              <li><a href="#{request.contextPath}/pages/user/blog_home.jsf">Blog home 2</a></li>
+                            <li><a href="#{request.contextPath}/pages/user/omnifaces.jsf">OmniFaces</a></li>
+                        </ul>
+                    </li>
+                    
+                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Form Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">                           
+                            <li><a href="#{request.contextPath}/pages/general/faq.jsf">FAQ</a></li>
+                            <li><a href="#{request.contextPath}/pages/general/rss.jsf">Social News</a></li>                            
+                            <li><a href="#{request.contextPath}/pages/general/contact_us.jsf">Contact_us</a></li>
+                            <li><a href="#{request.contextPath}/pages/general/address.jsf">Address</a></li>
+                            <li><a href="#{request.contextPath}/pages/general/profile.jsf">Profile</a></li>
+                            <li><a href="#{request.contextPath}/pages/general/sticky.jsf">Sticky</a></li>
+                            <li><a href="#{request.contextPath}/pages/general/qr.jsf">QR</a></li>
+                            <li><a href="#{request.contextPath}/pages/auth/chpass.jsf">Change password</a></li>
+                            <li><a href="#{request.contextPath}/pages/auth/login.jsf">Sign in</a></li>
+                            <li><a href="#{request.contextPath}/pages/auth/register.jsf">Register</a></li>
+                            <li><a href="#{request.contextPath}/pages/auth/signup.jsf">Sign up</a></li>
+                           
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+    </div><!-- /.container -->
+
+
+</html>
+

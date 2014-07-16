@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"    
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"     
+      xmlns:jsf="http://xmlns.jcp.org/jsf"    
+      xmlns:passthrough="http://xmlns.jcp.org/jsf/passthrough"     
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+
+    <h:body>
+        <f:view contracts="default" transient="false">
+            <ui:composition template="/template.xhtml">               
+                <ui:define name="content">
+                    <div class="container">
+                        <br/>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="alert alert-success">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                        ×</button>
+                                    <span class="glyphicon glyphicon-ok"></span> <strong>Success Message</strong>
+                                    <hr class="message-inner-separator"/>
+                                        <p>
+                                            You successfully read this important alert message.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="alert alert-info">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                        ×</button>
+                                    <span class="glyphicon glyphicon-info-sign"></span> <strong>Info Message</strong>
+                                    <hr class="message-inner-separator"/>
+                                        <p>
+                                            This alert needs your attention, but it's not super important.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="alert alert-warning">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                        ×</button>
+                                    <span class="glyphicon glyphicon-record"></span> <strong>Warning Message</strong>
+                                    <hr class="message-inner-separator"/>
+                                        <p>
+                                            Best check yo self, you're not looking too good.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="alert alert-danger">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                                        ×</button>
+                                    <span class="glyphicon glyphicon-hand-right"></span> <strong>Danger Message</strong>
+                                    <hr class="message-inner-separator"/>
+                                        <p>
+                                            Change a few things up and try submitting again.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.container -->
+
+                </ui:define>
+            </ui:composition>
+        </f:view>
+    </h:body>
+</html>
+

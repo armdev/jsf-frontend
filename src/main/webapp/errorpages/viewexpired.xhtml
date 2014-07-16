@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:pe="http://primefaces.org/ui/extensions"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"     
+      xmlns:jsf="http://xmlns.jcp.org/jsf"      
+      xmlns:passthrough="http://xmlns.jcp.org/jsf/passthrough"     
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"> 
+    
+ <f:view contentType="text/html; charset=iso-8859-1"/>
+    <h:head>
+        <title>Nice View Expired Page</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <center>
+                <img src="../resources/img/404.jpg" width="1000" height="602" alt="404"/>
+                <p>To protect your security, we have taken the liberty of logging you
+                    out. Those who sacrifice liberty for security deserve to have
+                    their views expired.</p>
+                <p>You were on page #{currentViewId}.  Maybe that's useful.</p>
+                <h:outputLink  value="#{facesContext.externalContext.request.contextPath}/index.jsf">
+                    <h:outputText value="View Expired Page - Home page"/>
+                </h:outputLink>
+            </center>
+        </h:form>
+    </h:body>
+</html>
